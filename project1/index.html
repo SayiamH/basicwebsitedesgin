@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Planner</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+<!-- get above from  google fonts -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body{
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        /* from google font  */
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        overflow: hidden;
+    }
+    .left{
+        display: inline-block;
+        /* border:2px solid red; */
+        position: absolute;
+        left:60px;
+        top:18px;
+    }
+    .left img{
+        width:194px;
+        
+    }
+    .left div{
+        text-align: center;
+        line-height: 19px;
+        font-size: 36px;
+    }
+    .mid{
+        display:block;
+        width: 36%;
+        margin: 29px auto;
+        /* border:2px solid black; */
+    }
+    .right{
+        display: inline-block;
+        /* border:2px solid green; */
+        position: absolute;
+        right:34px;
+        top: 33px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        color: black;
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: black;   
+        text-decoration: none;/*to remove underline*/
+        padding: 34px 23px;
+    
+    }
+    .navbar li a:hover, .navbar li a.active{
+          text-decoration: underline;
+          color:darkblue
+    }
+    .btn{
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        margin: 0px 9px;
+        background-color: whitesmoke;
+        color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor:pointer;/*to convert arrow cursor to hand*/
+    }
+    .btn:hover{
+        background-color: rgb(94, 62, 62);
+    }
+    .container{
+        color: black;
+        /* border: 2px solid rgb(0, 0, 0); */
+        margin: 50px 206px;
+        padding: 0px 524px;
+        width:30%;
+        border-radius: 20px;
+    }
+    .form-group input{
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 350px;
+        margin: 2px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <div class="left"> 
+                <img src="img/diet.jpg" alt="">
+                <div>Diet Planner</div>
+            </div>
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for some buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Diet Planner Of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <!-- for below write input:text  -->
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="text" name="" placeholder="Enter your Age">
+                <input type="text" name="" placeholder="Enter your Gender">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
